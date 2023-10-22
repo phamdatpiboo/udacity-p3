@@ -9,14 +9,14 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ng-version": "npx ng version"
   },
   "private": true,
   "dependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",
     "@angular/forms": "^8.2.14",
-    "@angular/http": "^7.2.2",
     "@angular/platform-browser": "^8.2.14",
     "@angular/platform-browser-dynamic": "^8.2.14",
     "@angular/router": "^8.2.14",
@@ -26,7 +26,6 @@
     "@ionic/angular": "^4.1.0",
     "@ionic/cli": "^6.16.3",
     "core-js": "^2.5.4",
-    "fsevents": "^2.3.2",
     "rxjs": "~6.5.4",
     "zone.js": "~0.9.1"
   },
@@ -45,7 +44,7 @@
     "@types/node": "~10.12.0",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
-    "codelyzer": "~4.5.0",
+    "codelyzer": "~5.2.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.4",
