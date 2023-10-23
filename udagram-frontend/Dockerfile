@@ -1,5 +1,7 @@
 ### Build
-FROM beevelop/ionic:lastest AS ionic
+FROM beevelop/ionic:latest AS ionic
+## Add this line to set NODE_OPTIONS
+ENV NODE_OPTIONS="--openssl-legacy-provider"
 ## Create app directory
 WORKDIR /usr/src/app
 ## Install app dependencies
