@@ -10,7 +10,7 @@ import {V0_USER_MODELS} from './controllers/v0/model.index';
 
 
 (async () => {
-  // try {
+  try {
     await sequelize.addModels(V0_USER_MODELS);
   
     console.debug("Initialize database connection...");
@@ -50,9 +50,8 @@ import {V0_USER_MODELS} from './controllers/v0/model.index';
       console.log( `server running ${config.url}` );
       console.log( `press CTRL+C to stop server` );
     } );
-  // } catch (error) {
-    
-  //   console.log('error', error);
-  //   // Do whatever you want, throw the error again if you want but it will just produce `UnhandledPromiseRejectionWarning` again, if you throw it again.
-  // }
+  } catch (error) {
+    console.log('error', error);
+    // Do whatever you want, throw the error again if you want but it will just produce `UnhandledPromiseRejectionWarning` again, if you throw it again.
+  }
 })();
