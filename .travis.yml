@@ -24,12 +24,12 @@ script:
   - docker tag udagram-api-feed  bolobala/udagram-api-feed:latest
   - docker tag udagram-api-user  bolobala/udagram-api-user:latest
   - docker tag udagram-reverseproxy  bolobala/udagram-reverseproxy:latest
-  - docker tag udagram-frontend  bolobala/udagram-frontend:latest2
+  - docker tag udagram-frontend  bolobala/udagram-frontend:latest3
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push bolobala/udagram-api-feed:latest
   - docker push bolobala/udagram-api-user:latest
   - docker push bolobala/udagram-reverseproxy:latest
-  - docker push bolobala/udagram-frontend:latest2
+  - docker push bolobala/udagram-frontend:latest3
   
