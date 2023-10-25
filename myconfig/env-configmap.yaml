@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: udacityproject3
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: mysecret
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: db-datpt57.cgi1c9fyyfgz.us-east-1.rds.amazonaws.com
+  URL: https://C560D5ED99C8957C0439EFA791A85BCA.gr7.us-east-1.eks.amazonaws.com
+  PORT: "8080"
+  SEQUELIZE_CONFIG: '{"dialectOptions": {"ssl": {"rejectUnauthorized": false}}}'
+metadata:
+  name: env-config
