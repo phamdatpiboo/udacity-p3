@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: bolobala
-        image: bolobala/udagram-frontend:latest
+        image: bolobala/udagram-frontend:latest5
         ports:
         - containerPort: 80
         resources:
